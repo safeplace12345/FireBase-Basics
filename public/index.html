@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB5RKkQMw5FFws82AiNn-20hghSXPvGjEo",
+    authDomain: "initial-101-4f535.firebaseapp.com",
+    projectId: "initial-101-4f535",
+    storageBucket: "initial-101-4f535.appspot.com",
+    messagingSenderId: "392131145629",
+    appId: "1:392131145629:web:2ea7610b292fc064fc8974",
+    measurementId: "G-W3HX1X9F2B"
+  };
+  // Initialize Firebase
+
+</script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Cloud Cafe</h1>
+
+    <div class="content">
+
+      <form id="add-cafe-form">
+      <input type="text" name="name" placeholder="Cafe name......">
+      <input type="text" name="city" placeholder="Cafe city......">
+      <button type="submit"> Add Cafe</button>
+      </form>
+      <fieldset>
+    <legend>Name Filter</legend>
+    <form class="filters filtersName">
+      <input type="text" placeholder="Filter by  or name....." name="input">
+      <button >Filter</button>
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>City Filter</legend>
+    <form class="filters filtersCity">
+      <input type="text" placeholder="Filter by city ....." name="input">
+      <button >Filter</button>
+  </fieldset>
+</form>
+<fieldset>
+  <legend>Advanced Filter</legend>
+    <form class="filters advancedQuery">
+    <label for="name">Name</label>
+    <input type="text" placeholder="Filter by city ....." name="name">
+    <label for="city">City</label>
+    <input type="text" placeholder="Filter by city ....." name="city">
+    <button >Advanced Filter</button>
+  </form>
+  </fieldset>
+  <div class="filters orderBy">
+    <button class="sortName">Sort by Name </button>
+    <button class="sortCity">Sort by City</button>
+  </div>
+      <ul id="cafe-list"></ul>
+    </div>
+
+    <script defer src='app.js'></script>
+  </body>
+</html>
